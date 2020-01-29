@@ -3,28 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <title>First HTML site</title>
+
+    <style>
+        header {
+            border-bottom: 1px solid gray;
+            padding: 4px 0 4px 0;
+        }
+        nav {
+            padding: 4px 0 4px 0;
+            
+        }
+        footer {
+            padding: 16px 0 16px 0;
+            border-top: 1px solid gray;
+        }
+        
+        body {
+            font-family: serif;
+            width: 960px;
+            margin: 20px auto;
+        }
+       
+        section {
+        display: inline-block;
+        width: 600px;
+        padding: 0 8px 0 0;
+        border-right: 1px solid gray;
+        margin-bottom: 8px;
+    }
+    aside {
+        display: inline-block;
+        width: 343px;
+        vertical-align: top;
+        padding: 0 0 0 8px;
+    }
+       p{
+           font-weight: bold;
+       }
+       
+       table {
+           font-family: Arial, Helvetica, sans-serif;
+           border-collapse: collapse;
+           width: 80%;
+           margin: 0 auto;
+       }
+       th { padding: 18px;
+       }
+        td {
+            padding: 12px;
+        }
+        th,td {
+            border:solid 1px #e6e6e6
+        }
+        tr{
+            background-color: #eeddee;
+        }
+        tr.even {
+            background-color: #f7f7f7;
+        }
+        
+        #heading {
+            background-color: #02ad8b;
+            color:white
+        }
+        
+        
+        </style>
+
+
+
 </head>
+
+
+
 <body>
+    
+    
+    <header>
     <h1>This is a site dedicated to the life and work of Michael I. Pupin</h1>
+    </header>
+    <nav>
     <ul>
         <li> <a href="Main page.html">Main page</a> </li>
         <li> <a href="Early life and education.html">Early life and education</a> </li>
         <li> <a href="Literary work.html">Literary work</a> </li>
         <li> <a href="Pupin coils.html">Pupin coils</a> </li>
     </ul>
+    </nav>
     <hr>
-        <h2>Literary work</h2>
+        
+        <section>
+           <h2>Literary work</h2>
         <p>Besides his patents he published several dozen scientific disputes, articles, reviews and a 396-page autobiography under the name Michael Pupin, From Immigrant to Inventor (Scribner's, 1923). He won the annual Pulitzer Prize for Biography or Autobiography. It was published in Serbian in 1929 under the title From pastures to scientist (Od pašnjaka do naučenjaka).</p>
         <p><b>Beside this he also published:</b></p>
-        <ul>
-            <li>Pupin Michael: <i>Der Osmotische Druch und seine Beziehung zur Freien Energie</i>, Inaugural Dissertation zur Erlangung der Doctorwurde, Buchdruckerei von Gustav Shade, Berlin, June, 1889.</li>
-            <li>Pupin Michael: <i>Thermodynamics of Reversible Cycles in Gases and Saturated Vapors</i>, John Wiley & Sons. 1894.</li>
-            <li>Pupin Michael: <i>Serbian Orthodox Church</i>, J. Murray. London, 1918.</li>
-            <li>Pupin Michael: <i>Yugoslavia. (In Association for International Conciliation Amer. Branch —Yugoslavia)</i>. American Association for International Conciliation. 1919.</li>
-            <li>Pupin Michael: <i>The New Reformation; from Physical to Spiritual Realities</i>, Scribner, New York, 1927.</li>
-            <li>Pupin Michael: <i>Romance of the Machine</i>, Scribner, New York, 1930.</li>
-            <li>Pupin Michael: <i>Discussion by M. Pupin and other prominent engineers in “Toward Civilization</i>, edited by C. A. Beard. Longmans, Green& Co. New York, 1930.</li>
+
+        <table>
+            <tr id="heading">
+                <th>Work</th>
+                <th>Publisher</th>
+                <th>Location</th>
+                <th>Year</th>
+             </tr>
+             <tr class="even">
+                 <td><i>Der Osmotische Druch und seine Beziehung zur Freien Energie</i></td>
+                 <td>Gustav Shade</td>
+                 <td>Berlin</td>
+                 <td>1889</td>
+                 </tr>
+                 <tr>
+                <td><i>Thermodynamics of Reversible Cycles in Gases and Saturated Vapors</i></td>
+                <td>John Wiley & Sons</td>
+                <td>Berlin</td>
+                <td>1894</td>
+                 </tr>
+                 <tr class="even">
+                <td><i>Serbian Orthodox Church</i></td>]
+                <td>J. Murray</td>
+                <td>London</td>
+                <td>1918</td>
+                 </tr>
+                 <tr>
+                <td><i>Yugoslavia</i></td>
+                <td>John Brouser</td>
+                <td>Germany</td>
+                <td>1919</td>
+                 </tr>
+                 <tr class="even">
+                <td><i>The New Reformation; from Physical to Spiritual Realities</i></td>
+                <td>Scribner</td>
+                <td>New York</td>
+                <td>1927</td>
+                 </tr>
+                 <tr>
+                <td><i>Romance of the Machine</i></td>
+                <td>Scribner</td>
+                <td>New York</td>
+                <td>1930</td>
+                 </tr>
+                 <tr class="even">
+                <td><i>Toward Civilization</i></td>
+                <td>C. A. Beard. Longmans</td>
+                <td>New York</td>
+                <td>1930</td>
+                </tr>
+            
+    
+
+       </table>
        
-        </ul>
+        
+
+
+        </section><aside><h2>Dodatne informacije</h2>
+        <p>Besides his patents he published several dozen scientific disputes, articles, reviews and a 396-page autobiography under the name Michael Pupin, From Immigrant to Inventor (Scribner's, 1923). He won the annual Pulitzer Prize for Biography or Autobiography. It was published in Serbian in 1929 under the title From pastures to scientist (Od pašnjaka do naučenjaka).</p>
+        </p>
+        
+        </aside>
+        <footer>
+            Copyright Lazar Jovanovic
+        </footer>
 </body>
 </html>
