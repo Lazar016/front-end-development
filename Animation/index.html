@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Lazar Jovanovic"
+    <title>First Animation</title>
+</head>
+<style>
+        body{
+        
+        
+            margin: 0;
+            background-color: #050210;
+        }
+        #circle{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left:40%;
+            top:25%;
+            background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            animation: circle 1s infinite linear;
+        }
+        #circle-2{
+            position: absolute;
+            content: "";
+            top: 25px;
+            right: 25px;
+            left: 25px;
+            bottom:25px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        #circle::before{
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom:0px;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            filter: blur(70px);
+        }
+        #circle::after{
+            position: absolute;
+            content: "";
+            top:25px;
+            left:25px;
+            right:25px;
+            bottom:25px;
+            background-color:#050210;
+            border-radius: 50%;
+            animation-name: loop;
+            animation: loop 1.3s infinite ease;
+            
+        }
+
+       @keyframes circle {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg)
+                }
+       }
+       @keyframes loop{
+           from{
+               transform:scale(0);
+               filter: saturate(200%);
+           }
+           to{
+               transform: scale(1);
+               filter: saturate(100%);
+               
+           }
+       }
+       
+        
+
+
+
+
+</style>
+<body>
+        <div id="circle">
+            <div id="circle-2"></div>
+        </div>
+
+
+
+</body>
+</html>
