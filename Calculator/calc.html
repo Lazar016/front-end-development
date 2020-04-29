@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Lazar Jovanovic">
+    <title>Js calculator</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+                          
+        let firstNumber = parseInt(prompt("Enter your first number :", 0));
+        let operator = prompt("Enter operator : +, -, /, *, %");
+        let secondNumber = parseInt(prompt("Enter your second number :", 0));
+        
+           
+            function calculate(a, b){
+                if(operator == "+"){
+                    var plus = a + b;
+                    alert("Result is : " + plus.toFixed(2));
+                } else if(operator == "-"){
+                    var minus = a - b;
+                    alert("Result is : " + minus.toFixed(2));
+                } else if(operator == "/"){
+                    var division = a / b;
+                    alert("Result is : " + division.toFixed(2));
+                }else if(operator == "*"){
+                    var multiply = a * b;
+                    alert("Result is : " + multiply.toFixed(2));
+                }else if(operator == "%"){
+                    var rest = a % b;
+                    alert("Result is : " + rest.toFixed(2));
+                }else if(operator != ""){
+                    var result = "Enter the operator, refresh and try again!";
+                    alert(result);
+                    throw Error("Enter the operator, refresh and try again!")
+                }
+                                                                                                               
+                }
+                
+                
+            let Result = calculate(firstNumber, secondNumber); 
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
